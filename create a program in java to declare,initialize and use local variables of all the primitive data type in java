@@ -1,0 +1,58 @@
+/*Author: Naman Kumar
+ 
+ *Date: 20/Jul/2020
+ 
+ */
+ 
+ 
+import java.util.Scanner;
+
+
+public class PrimitiveDataTypes
+{
+	
+	public static void main(String[] args)
+	{
+		
+	 	Scanner scanner = new Scanner(System.in);
+	 	
+	 	System.out.println("Please Enter Your Current Year");
+
+
+		byte studentCurrentYear = scanner.nextByte();
+		
+		System.out.println("Please Enter your class roll number");
+		short studentClassRollNumber = scanner.nextShort();
+		
+		System.out.println("Please Enter your Uni. Roll number");
+		int studentUniversityRollNumber = scanner.nextInt();
+		
+		System.out.println("Please enter your enrollment number");
+		long studentEnrollmentNumber = scanner.nextLong();
+		scanner.nextLine();
+		
+		System.out.println("Enter your current CPI: ");
+		float studentCurrentCPI = Float.parseFloat(scanner.nextLine().trim());
+		
+		System.out.println("Enter your Current SPI: ");
+		double studentCurrentSPI = Double.parseDouble(scanner.nextLine().trim());
+		
+		System.out.println("Please enter a character for your gender (m/f/n): ");
+		char studentGender = scanner.nextLine().charAt(0);
+		
+		System.out.println("Have you opted for hostel? (true / false)");
+		boolean hasStudentOptedForHostel = scanner.nextBoolean();
+		scanner.close();
+		
+		System.out.println("Student is in " + studentCurrentYear + " year");
+		System.out.println("Student's class roll number is " + studentClassRollNumber);
+		System.out.println("Student's University Roll Number is " + studentUniversityRollNumber);
+		System.out.println("Student's Enrollment Number is " + studentEnrollmentNumber);
+		System.out.println("Student's Current CPI is " + studentCurrentCPI );
+		System.out.println("Student's Current SPI is " + studentCurrentSPI );
+		System.out.println("Student's Gender is " + studentGender);
+		System.out.println("Has Student Opted for Hostel?  " + hasStudentOptedForHostel);
+		}
+		}
+		
+		
